@@ -40,3 +40,10 @@
   font-weight: 500;
   font-style: italic;
 }
+@font-face {
+  font-family: 'Druk Wide';
+  src: url('drukwide-super.woff2') format('woff2'),
+        url('drukwide-super.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}

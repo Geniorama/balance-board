@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Balance Board</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/fonts/druk-collection.css">
+  <link rel="icon" type="image/x-ico" href="/images/favicon.ico"/>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
             sans: ['Druk Collection', 'sans-serif'],
+            DrukWide: ['Druk Wide']
           },
           colors: {
             primary: '#0E0E10',
@@ -22,45 +25,98 @@
   </script>
 </head>
 <body class="bg-primary text-white m-0 p-0">
-  <div class="max-w-md mx-auto relative h-screen">
-    <img src="/images/Fondo.png" alt="background" class="absolute top-0"/>
-    <div class="relative h-[922px] md:h-[972px] flex flex-col justify-end">
-      <div class="mb-8 w-[190px] mx-auto">
-        <img src="/images/logo.png" width="70" height="70" alt="logo" class="block mx-auto mb-6">
-        <h2 class="text-2xl uppercase tracking-[22px] mb-2">Balance</h2>
-        <span class="text-2xl uppercase w-[120px] tracking-[20px] mx-auto block text-center">Board</span>
+  <div class="max-w-md mx-auto lg:max-w-screen-xl relative">
+    <img src="/images/background.png" alt="background" class="absolute top-0 lg:hidden"/>
+    <img src="/images/background-desktop.png" alt="background" class="absolute top-0 hidden lg:block max-w-screen-xl"/>
+    <div class="relative h-[922px] md:h-[972px] lg:h-[720px] flex flex-col justify-end">
+      <div class="mb-10 w-[190px] mx-auto">
+        <svg class="h-16 w-16 block mx-auto mb-4" id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 558.82 558.82">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #fff;
+              }
+            </style>
+          </defs>
+          <g id="Capa_1-2" data-name="Capa 1">
+            <g>
+              <path class="cls-1" d="m1.53,282.46c.84,76.73,63.73,138.26,140.46,137.42l-3.05-277.88C62.21,142.84.69,205.73,1.53,282.46Z"/>
+              <path class="cls-1" d="m282.46,557.29c76.73-.84,138.26-63.73,137.42-140.46l-277.88,3.05c.84,76.73,63.73,138.26,140.46,137.42Z"/>
+              <path class="cls-1" d="m0,143.52h0s138.94-1.52,138.94-1.52l-1.52-138.94C60.69,3.9-.83,66.79,0,143.52Z"/>
+              <path class="cls-1" d="m143.52,558.82h0s-1.52-138.94-1.52-138.94l-138.94,1.52c.84,76.73,63.73,138.26,140.46,137.42Z"/>
+              <path class="cls-1" d="m558.82,415.3h0s-138.94,1.52-138.94,1.52l1.52,138.94c76.73-.84,138.26-63.73,137.42-140.46Z"/>
+              <path class="cls-1" d="m415.3,0h0s1.52,138.94,1.52,138.94l138.94-1.52C554.93,60.69,492.04-.83,415.3,0Z"/>
+              <g>
+                <path class="cls-1" d="m305.38,211.94c3.33,3.25,5.86,7.05,7.55,11.11,1.7,4.06,2.57,8.38,2.62,12.7.05,4.32-.73,8.66-2.34,12.75-1.61,4.09-4.05,7.95-7.31,11.27l-5.7,5.83c2.39.38,4.74,1.01,7.02,1.91,4.1,1.61,7.95,4.05,11.28,7.31,3.33,3.25,5.86,7.05,7.55,11.11.95,2.26,1.63,4.6,2.06,6.98l40.24-41.13c-3.82-14.24-10.92-27.12-20.45-37.79-10.36-11.59-23.58-20.56-38.52-25.82-2.04-.72-4.12-1.35-6.22-1.92l-16.13,16.48c2.4.38,4.78.99,7.08,1.89,4.1,1.61,7.95,4.05,11.28,7.31Z"/>
+                <path class="cls-1" d="m256.07,213.96v-.06s30.01-30.66,30.01-30.66c-2.82-.23-5.68-.33-8.57-.3-19.28.21-37.07,6.26-51.81,16.45-14.74,10.19-26.38,24.53-33.25,41.29-4.58,11.17-7.05,23.41-6.91,36.27.03,2.91.2,5.78.49,8.61l64.33-65.75,5.72-5.85Z"/>
+                <path class="cls-1" d="m416.83,138.95l1.43,130.09c-4.85-69-59.96-123.85-128.66-128.69l127.23-1.4C415.99,62.21,353.1.69,276.36,1.53c-76.73.84-138.26,63.73-137.42,140.46l127.77-1.4c-71.31,6.61-126.78,66.95-125.98,139.83.84,76.73,63.73,138.26,140.46,137.42,73.93-.81,133.72-59.22,137.24-132.12l1.44,131.1c76.73-.84,138.26-63.73,137.42-140.46-.84-76.73-63.73-138.26-140.46-137.42Zm-48.67,196c-11.38,17.25-27.6,31.02-46.78,39.39-12.78,5.57-26.88,8.73-41.68,8.89-7.67.08-15.17-.64-22.41-2.1-.62-.12-1.17-.24-1.64-.34h-.05s-.03-.02-.03-.02c-39.67-8.66-71.18-39.21-81.1-78.52-2.04-8.06-3.16-16.49-3.25-25.15-.25-22.2,6.29-42.95,17.67-60.19,11.38-17.25,27.6-31.02,46.78-39.38,12.78-5.57,26.88-8.73,41.68-8.89,25.76-.29,49.57,8.56,68.22,23.51,18.66,14.95,32.24,36.02,37.67,60.23,1.62,7.22,2.51,14.71,2.59,22.38.25,22.2-6.29,42.96-17.67,60.2Z"/>
+                <path class="cls-1" d="m281.31,340.75l27.48-28.09c1.9-1.94,3.29-4.15,4.22-6.5.92-2.35,1.38-4.86,1.35-7.37-.03-2.5-.53-5-1.51-7.33-.98-2.33-2.42-4.51-4.36-6.41-1.94-1.9-4.15-3.29-6.5-4.22-2.35-.92-4.86-1.38-7.37-1.35-2.5.03-5,.53-7.33,1.51-2.33.98-4.51,2.42-6.41,4.36l-13.39,13.68-40.71,41.35-.53-20.21,22.86-22.74v-.06s14.15-14.47,14.15-14.47l1.9-1.94,6.91-7.09v.03s23.6-24.13,23.6-24.13c1.9-1.94,3.29-4.14,4.22-6.5.92-2.35,1.38-4.86,1.35-7.36-.03-2.51-.53-5-1.51-7.34-.98-2.33-2.42-4.51-4.36-6.41-1.94-1.9-4.15-3.29-6.5-4.22-2.35-.92-4.86-1.38-7.37-1.35s-5,.53-7.33,1.51c-2.33.98-4.51,2.42-6.41,4.36l-5.11,5.23.42,37.88-14.15,14.47-.42-37.87-59.1,60.4c8.73,29.28,31.52,52.48,60.44,61.85l-.33-29.66,14.16-13.89.41,37.48,17.22-17.6Z"/>
+                <path class="cls-1" d="m324.65,316.91l-5.63,5.76-27.48,28.09-17.66,18.05c1.87.09,3.76.13,5.66.11,19.28-.21,37.07-6.26,51.81-16.45,14.74-10.19,26.38-24.53,33.25-41.29,4.58-11.17,7.05-23.42,6.91-36.28-.02-1.9-.1-3.79-.24-5.66l-46.63,47.66Z"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 974.07 232.52">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #fff;
+              }
+            </style>
+          </defs>
+          <g id="Capa_1-2" data-name="Capa 1">
+            <g>
+              <g>
+                <path class="cls-1" d="m0,.83h21.08c11.01,0,14.08,5.8,14.08,14.33v13.49c0,7.46-3.2,10.89-6.63,12.19,3.43,1.31,7.7,4.02,7.7,12.91v19.06c0,9.35-4.15,16.1-14.21,16.1H0V.83Zm13.38,11.95v22.85h4.03c3.67,0,4.61-2.49,4.61-6.16v-11.13c0-3.67-.94-5.56-4.61-5.56h-4.03Zm0,35.98v27.71h4.03c4.26,0,5.21-2.02,5.21-5.92v-16.1c0-3.67-.94-5.69-5.21-5.69h-4.03Z"/>
+                <path class="cls-1" d="m179.84,72.33h-9.82l-1.66,16.57h-11.95L167.18.83h15.86l11.48,88.07h-12.9l-1.78-16.57Zm-8.4-13.14h6.99l-3.55-32.55-3.43,32.55Z"/>
+                <path class="cls-1" d="m328.91.83v74.45h16.33v13.62h-29.71V.83h13.38Z"/>
+                <path class="cls-1" d="m489.46,72.33h-9.82l-1.66,16.57h-11.95L476.8.83h15.86l11.48,88.07h-12.9l-1.78-16.57Zm-8.4-13.14h6.99l-3.55-32.55-3.43,32.55Z"/>
+                <path class="cls-1" d="m637.23.83l11.48,47.23V.83h12.19v88.07h-10.89l-12.79-50.66v50.66h-12.08V.83h12.08Z"/>
+                <path class="cls-1" d="m806.65,50.54h13.14v20.36c0,9.47-3.2,19.06-15.98,19.06h-2.96c-13.61,0-16.46-9.7-16.46-18.59V17.63c0-8.99,3.91-17.63,15.98-17.63h3.07c14.68,0,16.34,9.7,16.34,18.34v15.75h-13.14v-15.52c0-3.79-1.19-5.8-4.5-5.8s-4.15,1.89-4.15,5.8v52.32c0,4.02,1.42,6.04,4.27,6.04,3.19,0,4.38-2.25,4.38-5.92v-20.48Z"/>
+                <path class="cls-1" d="m973.36.83v12.78h-17.05v23.08h13.38v13.38h-13.38v25.44h17.76v13.38h-31.14V.83h30.43Z"/>
+              </g>
+              <g>
+                <path class="cls-1" d="m152.67,143.39h21.08c11.01,0,14.08,5.8,14.08,14.33v13.49c0,7.46-3.2,10.89-6.63,12.19,3.43,1.31,7.69,4.02,7.69,12.91v19.06c0,9.35-4.15,16.1-14.21,16.1h-22.02v-88.07Zm13.38,11.95v22.85h4.02c3.67,0,4.61-2.49,4.61-6.16v-11.13c0-3.67-.94-5.56-4.61-5.56h-4.02Zm0,35.98v27.71h4.02c4.26,0,5.21-2.02,5.21-5.92v-16.1c0-3.67-.94-5.69-5.21-5.69h-4.02Z"/>
+                <path class="cls-1" d="m348.15,211.81c0,12.31-4.15,20.71-17.05,20.71h-2.25c-12.78,0-17.28-8.4-17.28-20.71v-49.01c0-12.31,4.5-20.24,17.16-20.24h2.25c13.02,0,17.16,8.05,17.16,20.12v49.13Zm-13.62-49.72c0-4.5-1.54-6.75-4.61-6.75-3.43,0-4.74,2.13-4.74,6.75v50.66c0,3.79,1.07,6.75,4.86,6.75s4.5-2.96,4.5-6.75v-50.66Z"/>
+                <path class="cls-1" d="m491.65,214.89h-9.82l-1.66,16.57h-11.95l10.77-88.07h15.86l11.48,88.07h-12.9l-1.78-16.57Zm-8.4-13.14h6.99l-3.55-32.55-3.43,32.55Z"/>
+                <path class="cls-1" d="m640.72,231.46h-13.38v-88.07h21.67c9,0,13.38,3.67,13.38,13.61v15.62c0,7.34-3.43,10.3-5.8,11.25,2.96,1.31,5.8,3.55,5.8,9.59v30.9c0,3.67.71,5.21,1.3,6.51v.59h-13.26c-.6-.94-1.3-2.49-1.3-7.22v-26.52c0-3.91-.71-5.56-4.97-5.56h-3.43v39.3Zm0-51.85h3.55c3.67,0,4.86-2.36,4.86-6.27v-12.32c0-3.79-.71-5.68-4.86-5.68h-3.55v24.26Z"/>
+                <path class="cls-1" d="m785.88,143.39h20.48c11.48,0,15.03,6.5,15.03,16.92v53.62c0,10.89-4.02,17.52-15.03,17.52h-20.48v-88.07Zm13.38,75.29h3.2c4.14,0,5.21-2.13,5.21-6.87v-49.6c0-5.1-1.3-6.87-4.62-6.87h-3.79v63.33Z"/>
+              </g>
+            </g>
+          </g>
+        </svg>
       </div>
-      <div class="w-[250px] mx-auto">
+      <div class="w-[240px] mx-auto font-DrukWide text-sm">
         <a href="#" class="font-bold uppercase bg-white w-full block rounded-full mb-4">
-          <span class="text-center block text-primary p-3 text-xl">
+          <span class="text-center block text-primary p-4 leading-none">
             Instagram
           </span>
         </a>
         <a href="#" class="font-bold uppercase bg-white w-full block rounded-full mb-4">
-          <span class="text-center block text-primary p-3 text-xl">
+          <span class="text-center block text-primary p-4 leading-none">
             Whatsapp
           </span>
         </a>
         <a href="#" class="font-bold uppercase bg-white w-full block rounded-full mb-4">
-          <span class="text-center block text-primary p-3 text-xl">
+          <span class="text-center block text-primary p-4 leading-none">
             TikTok
           </span>
         </a>
         <a href="#" class="font-bold uppercase bg-white w-full block rounded-full mb-4">
-          <span class="text-center block text-primary p-3 text-xl">
+          <span class="text-center block text-primary p-4 leading-none">
             Facebook
           </span>
         </a>
         <a href="#" class="font-bold uppercase bg-white w-full block rounded-full mb-4">
-          <span class="text-center block text-primary p-3 text-xl">
+          <span class="text-center block text-primary p-4 leading-none">
             Mail
           </span>
         </a>
       </div>
-      <div class="relative overflow-hidden h-[100px] mt-24">
-        <div style=" transform: translate(-50%, 0);" class="absolute left-[50%] rounded-[50%] bg-white w-[480px] pb-[70%] m-auto"></div>
+      <div class="relative overflow-hidden h-[95px] mt-[10.2rem] lg:mt-[3rem]">
+        <div style=" transform: translate(-50%, 0);" class="absolute left-[50%] rounded-[50%] bg-white w-[480px] lg:w-[550px] pb-[70%] lg:pb-[30%] m-auto"></div>
         <div class="h-[100%] relative flex justify-center items-center">
-          <h2 class="text-xl uppercase tracking-[10px] text-center text-primary mt-8 font-bold">Contact us</h2>
+          <h2 class="text-xl uppercase tracking-[14px] text-center text-primary mt-8 font-bold">Contact us</h2>
         </div>
       </div>
     </div>
